@@ -1,0 +1,78 @@
+#about-bg{
+	height:calc(40vh);
+	width:100%;
+	overflow:hidden;
+	background-size: cover;
+	h1, i{
+		color:$color_white;
+		margin:0px;
+		text-align: center;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+		padding: 0px 20px;
+		padding-top:120px;
+		@media screen and (max-width:768px){
+			padding-top:80px;
+		}
+	}
+	a{
+		display: block;
+		border-box: box-sizing;
+		width: 100%;
+		margin: auto;
+		box-sizing: border-box;
+		text-align: center;
+	}
+}
+
+#about-section{
+	background-color:#fff;
+	.container{
+		text-align:center;
+		max-width:700px;
+		margin:auto;
+		padding:80px 0px;
+	}img{
+		width:100px;
+		margin:20px 0px;
+	}
+	hr{
+		width:50px;
+		border:0px;
+		border-top:1px solid #ccc;
+		margin:35px auto;
+	}
+
+}
+
+#about-icon-section{
+	padding:160px 0px;
+	background-color:#f1f1f1;
+	article{
+		text-align:center;
+		i{
+			font-size: 55px;
+		}
+		hr{
+			width:30px;
+			border:0px;
+			border-top:1px solid #ccc;
+			margin:20px auto;
+		}
+	}
+}
+
+#about-team{
+	padding:80px 0px;
+	background-color:$color_white;
+	h1{
+		text-align:center;
+		margin-bottom:80px;
+	}
+	img{
+		max-width: 100%;
+		width: 345px;
+		@media screen and (max-width:768px){
+			width: auto;
+		}
+	}
+}

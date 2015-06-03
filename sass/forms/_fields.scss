@@ -1,0 +1,41 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="submit"],
+textarea {
+	color: $color_red;
+	border: 2px solid $color_black;
+	border-radius: 0px;
+	margin:8px 0px;
+	display:block;
+	background-color:inherit;
+	&:focus {
+		color: none;
+		outline:none;
+	}
+}
+textarea{
+	height:250px;
+	text-indent:10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"], textarea {
+	padding: 10px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+section,div,form{
+	&:focus{
+		outline:none;
+	}
+}

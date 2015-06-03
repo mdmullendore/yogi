@@ -1,0 +1,119 @@
+@import "compass";
+
+// Required
+#slides {
+  position: relative;
+  height:calc(100vh - 72px) !important;
+  .slides-container {
+    display: none;
+  }
+  h1,p{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    left:calc(50% - 350px);
+    width: 700px;
+    text-align: center;
+    padding: 0px 10px;
+    color:$color_white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.65);
+  }
+  h1{
+    font-size: 2.3em;
+  }
+  p{
+    top: 43%;
+  }
+  .scrollable {
+    @include pie-clearfix;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+}
+
+// Optional
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+  a {
+    position: absolute;
+    display: block;
+    &.prev {
+      left: 0;
+      margin-left: 20px;
+    }
+    &.next {
+      right: 0;
+      margin-right: 20px;
+    }
+    &:hover{
+      opacity: 0.8;
+    }
+    i{
+      font-size: 2em;
+      color:$color_white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.65);
+    }
+  }
+}
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  a {
+    border: 2px solid #fff;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    @include inline-block;
+    margin: 2px;
+    overflow: hidden;
+    text-indent: -100%;
+    &.current {
+      background: #fff;
+    }
+    &:hover{
+      opacity: 0.8;
+    }    
+  }
+}
+
+.parallax-section{
+  min-height: 400px;
+  position: relative;
+  width: 100% !important;
+  min-width: 400px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.65);  
+  p{
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    margin: auto;
+    max-width: 650px;
+    text-align: center;
+    font-size: 24px;
+    padding: 140px 10px 20px 10px;
+  }
+}
+.parallax-section>div:nth-of-type(1){
+    margin: 0;
+    height: 400px;
+    position:absolute;
+    top:0;left:0;
+    width:100%;   
+}

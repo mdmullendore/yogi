@@ -1,0 +1,93 @@
+#contact-bg{
+	height:calc(40vh);
+	background-size: cover;
+	h1, h2, i{
+		margin:0px;
+		color:$color_white;
+		text-align: center;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+		padding: 0px 20px;
+	}
+	h1{
+		padding-top:100px;
+		@media screen and (max-width:768px){
+			padding-top:70px;
+		}	
+	}
+	i{
+		margin-top:20px;
+		&:hover{
+			opacity: 0.75;
+		}
+	}
+}
+#contact-form{
+	input, textarea{
+		width:100%;
+	}
+	.container{
+		max-width:720px;
+		margin:80px auto;
+	}
+	input[type="submit"]{
+		width:200px;
+		padding:15px 10px;
+		font-size: 16px;
+		color:$color_black;
+		&:hover{
+			color:$color_white;
+			background-color:$color_black;
+		}
+	}
+}
+
+#contact-jobs{
+	.col-1-2:nth-child(1){
+		height: 400px;
+		background-size: cover;
+		margin-left: 0px;
+		margin-right:0px;
+		width:50%;
+		@media screen and (max-width:768px){
+			width:100%;
+		}
+	}
+	.col-1-2:nth-child(2){
+		background-color:$color_black_bg;
+		margin-left:0px;
+		margin-right:0%;
+		width:50%;
+		padding:40px;
+		height: 400px;
+		@media screen and (max-width:768px){
+			width:100%;
+			height: inherit;
+		}
+		p{
+			color:$color_white;
+			padding:40px;
+		}
+		a{
+			border:2px solid $color_white;
+			padding:15px 10px;
+			text-align: center;
+			margin: auto;
+			width: 240px;
+			color: $color_white;
+			display: block;
+			font-size: 18px;
+			border-box: box-sizing;
+			box-sizing: border-box;
+			margin: 0px auto 80px auto;
+			&:hover{
+				background-color:$color_white;
+				color:$color_red;
+			}
+		}
+	}
+}
+
+#map-canvas{
+	width:100%;
+	height: 400px;
+}

@@ -1,0 +1,101 @@
+#service-bg{
+	height:calc(40vh);
+	background-size: cover;
+	h1, h2, i{
+		margin:0px;
+		color:$color_white;
+		text-align: center;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+		padding: 0px 20px;
+	}
+	h1{
+		padding-top:100px;
+		@media screen and (max-width:768px){
+			padding-top:70px;
+		}	
+	}
+	a{
+		display: block;
+		border-box: box-sizing;
+		width: 100%;
+		margin: auto;
+		box-sizing: border-box;
+		text-align: center;
+		i{
+			margin-top:20px;
+			&:hover{
+				opacity: 0.75;
+			}
+		}	
+	}	
+}
+#process-service,#about-service{
+	background-color:#FFF;
+	text-align:center;
+	padding:40px 0px;
+	hr{
+		width:50px;
+		border:0px;
+		border-top:1px solid #ccc;
+		margin:35px auto;
+	}
+	.top-row{
+		margin-bottom: 40px;
+	}
+	.top-row p{
+		max-width: 700px;
+		padding:0px 10px;
+		margin:auto;
+	}
+	.row:nth-child(2){
+		margin-top:40px;
+	}
+	i{
+		font-size: 3em;
+		color:$color_red;
+	}
+	.process-service-icons i{
+		border-radius: 50%;
+		background-color: #eee;
+		color: #a3a3a3;
+		text-align: center;
+		vertical-align: sub;
+		padding: 25px;
+		display: block;
+		box-sizing: border-box;
+		width: 98px;
+		position: static;
+		margin: auto;
+		transition: 0.5s ease;
+		-webkit-transition: 0.5 ease;
+		-moz-transition: 0.5s ease;
+		-o-transition: 0.5s ease;		
+		&:hover{
+			background-color:$color_red;
+			color:$color_white;
+		}
+	}
+	.icon-cloud-storage:before, .icon-cog2:before,.icon-arrow-sync:before{
+		top: -2px;
+  		position: relative;	
+	}
+}
+
+#about-service{
+	background-color:#F1F1F1;
+	margin-bottom: 40px;
+	.col-1-3{
+		margin-top:40px;
+		background-color:$color_white;
+		border-radius:2px;
+		padding:50px 0px 25px 0px;
+		box-shadow: 0px 2px 2px 0px rgba(0,0,0,.15);
+		i, h3,p{
+			padding:0px 25px;
+		}
+		p{
+			padding-bottom:25px;
+			border-bottom:1px solid #ccc;
+		}
+	}
+}
