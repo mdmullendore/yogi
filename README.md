@@ -1,9 +1,8 @@
-YOGI
-=======================================
+### YOGI
 
 Premium Wordpress Theme build using underscores for rapid theme dev
 
-Build Using:
+**Build Using:**
 
 - HTML5
 - SASS
@@ -11,8 +10,6 @@ Build Using:
 - JQUERY
 - PHP
 
-
-See photos here: http://www.masonmullendore.com/yogi
 
 
 
